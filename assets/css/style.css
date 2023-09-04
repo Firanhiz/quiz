@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Gemunu+Libre:wght@400;700&family=Grenze+Gotisch&family=Lemon&family=Lexend+Zetta&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mogra&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(./reset.css);
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.quiz-content {
+    width: 600px;
+    margin: 60px auto;
+    border: 1px solid #A7A7A7;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.quiz-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F0F0F0;
+    padding: 12px 15px;
+    border-bottom: 1px solid #A7A7A7;
+}
+
+.quiz-head h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.time-content {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding: 0 7px;
+    background-color: #626262;
+    color: white;
+    border-radius: 10px;
+}
+
+.time-content .time {
+    display: inline-flex;
+    padding: 3px 4px;
+    background-color: #FFA722;
+    border-radius: 6px;
+    margin-left: 6px;
+}
+
+.quiz-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F0F0F0;
+    padding: 12px 15px;
+    border-top: 1px solid #A7A7A7;
+}
+
+.quiz-footer .count {
+    padding: 8px 9px;
+    background-color: #FFA722;
+    color: white;
+    border-radius: 6px;
+}
+
+.quiz-footer .btn {
+    display: inline-flex;
+    padding: 8px 15px;
+    background-color: #2260FF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.quiz-body {
+    padding: 33px 28px;
+}
+
+.options {
+    margin-top: 16px;
+}
+
+.option {
+    padding: 9px 12px;
+    border-radius: 8px;
+    border: 1px solid #A7A7A7;
+}
+
+.option:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.option.success {
+    background-color: #04FFBA;
+}
+
+.option.danger {
+    background-color: red;
+}
+
