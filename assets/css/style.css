@@ -62,13 +62,17 @@ body {
 }
 
 .quiz-footer .btn {
-    display: inline-flex;
     padding: 8px 15px;
     background-color: #2260FF;
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    display: none;
+}
+
+.quiz-footer .btn.open {
+    display: inline-flex;
 }
 
 .quiz-body {
@@ -83,17 +87,22 @@ body {
     padding: 9px 12px;
     border-radius: 8px;
     border: 1px solid #A7A7A7;
+    cursor: pointer;
 }
 
 .option:not(:last-child) {
     margin-bottom: 10px;
 }
 
-.option.success {
+.option .success {
     background-color: #04FFBA;
 }
 
-.option.danger {
+.option .danger {
     background-color: red;
+}
+
+.option .disabled {
+    pointer-events: none;
 }
 
