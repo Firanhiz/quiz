@@ -94,15 +94,15 @@ body {
     margin-bottom: 10px;
 }
 
-.option .success {
+.option.success {
     background-color: #04FFBA;
 }
 
-.option .danger {
+.option.danger {
     background-color: red;
 }
 
-.option .disabled {
+.option.disabled {
     pointer-events: none;
 }
 

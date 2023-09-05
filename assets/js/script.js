@@ -41,7 +41,7 @@ function createQuiz() {
     let optionHtml = '';
     for (let option in findQuestion.options) {
        optionHtml += `
-       <div class="option disabled" onclick='handleAnswer(this)'>
+       <div class="option" onclick='handleAnswer(this)'>
             <b>${option}</b>. ${findQuestion.options[option]}
         </div>
        ` ;
@@ -68,7 +68,7 @@ function handleAnswer (event) {
     };
 
     document.querySelectorAll('.option').forEach(function(el) {
-        el.classList.add('.disabled');
+        el.classList.add('disabled');
     });
 
     if (!quiz.quizFinish) {
